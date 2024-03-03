@@ -1,0 +1,36 @@
+{
+	"name": "imohitr",
+	"license": "",
+	"discription": "My Portfolio Website",
+	"author": "Mohit Chauhan",
+	"version": "1.0.0",
+	"type": "module",
+	"homepage": "",
+	"engines": {
+		"yarn": ">1.22.0",
+		"node": ">20.0.0"
+	},
+	"scripts": {
+		"start": "vite dev --open",
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"deploy": "vite build && touch build/.nojekyll && gh-pages -d build -t true"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
+	},
+	"dependencies": {
+		"@sveltejs/adapter-static": "^3.0.1",
+		"@sveltejs/kit": "^2.5.2",
+		"autoprefixer": "^10.4.16",
+		"postcss": "^8.4.31",
+		"svelte": "^4.2.9",
+		"svelte-check": "^3.4.3",
+		"svelte-fa": "^4.0.2",
+		"tailwindcss": "^3.4.1",
+		"vite": "^5.0.12",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"svelte-preprocess": "^5.1.3"
+	}
+}
