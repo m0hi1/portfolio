@@ -3,7 +3,7 @@ import {vitePreprocess} from "@sveltejs/vite-plugin-svelte";
 
 /** @type {import('@sveltejs/kit').Config} */
 
-
+const dev = process.argv.includes('dev');
 
 const config = {
 	preprocess: vitePreprocess(),
@@ -12,11 +12,14 @@ const config = {
 			{
 				pages: 'build',
 				assets: 'build',
-				fallback: undefined,
+				fallback: '404.html',
 				precompress: false,
 				strict: false
 			}
 		),
+		paths: {
+			base: dev ? '' : process.env.BASE_PATH,
+		}
 	},
 };
 export default config;

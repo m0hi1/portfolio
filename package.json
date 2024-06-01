@@ -8,9 +8,11 @@
   "type": "module",
   "scripts": {
     "start": "vite dev --open",
+    "build": "vite build",
     "dev": "vite dev",
     "preview": "vite preview",
-    "deploy": "pnpm build && pnpx gh-pages -d build -t true",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "check": "svelte-check"
   },
   "devDependencies": {
