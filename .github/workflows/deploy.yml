@@ -1,9 +1,9 @@
-name: Deploy to GitHub Pages
+name: Deploy to GH pages
 
 on:
   push:
     branches: 'main'
-
+    
 jobs:
   build_site:
     runs-on: ubuntu-latest
@@ -31,6 +31,7 @@ jobs:
           BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
+
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,9 +1,9 @@
 {
-  "name": "imohitr",
-  "discription": "My Portfolio Website",
+  "name": "m0hi1",
+  "description": "My Portfolio Website",
   "author": "Mohit Chauhan",
   "version": "1.0.0",
-  "homepage": "https://imohitr.github.io/",
+  "homepage": "https://m0hi1.github.io/Portfolio",
   "private": true,
   "type": "module",
   "scripts": {
